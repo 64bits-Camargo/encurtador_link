@@ -16,3 +16,10 @@ class InMemoryRepository(IUrlRepository):
         self.table[self.id] = self.set_id(url)
         
         return self.table[self.id]
+    
+
+    def get(self, hash: str) -> Url:
+        
+        for url in self.table.values():
+            if url.hash == hash:
+                return url

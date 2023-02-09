@@ -7,6 +7,7 @@ class DtoUrl:
     short_url: str
     redirect_url: str
     hits: int
+    hash: str
 
 
 class Url:
@@ -29,3 +30,7 @@ class Url:
     @property
     def hits(self) -> int:
         return self._props.hits
+
+    @property
+    def hash(self) -> str:
+        return self._props.hash
