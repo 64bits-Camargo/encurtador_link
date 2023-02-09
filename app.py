@@ -30,9 +30,9 @@ class RedirectUrl(Resource):
         get_url_use_case = GetUrlUseCase(url_repository)
         data_request = GetUrlRequest(hash=hash)
         
-        get_url = get_url_use_case.execute(**data_request)
-        
-        if not get_url:
+        get_url = get_url_use_case.execute(data_request)
+
+        if get_url.object is None:
             return {'error': 'not found!'}
         
         return redirect(get_url.object.redirect_url)

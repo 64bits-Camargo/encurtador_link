@@ -23,5 +23,5 @@ class GetUrlUseCase:
         
     def execute(self, request: GetUrlRequest) -> GetUrlResponse:
         return GetUrlResponse(
-            object=self.repository.get(str(request))
+            object=self.repository.get(str(request.hash))
         )
