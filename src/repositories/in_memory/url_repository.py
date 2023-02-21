@@ -1,5 +1,5 @@
-from src.entities.url import Url
-from src.repositories import IUrlRepository
+from entities import Url
+from repositories import IUrlRepository
 
 
 class InMemoryRepository(IUrlRepository):

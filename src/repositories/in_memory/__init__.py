@@ -1,1 +1,1 @@
-from src.repositories.in_memory.url_repository import InMemoryRepository
+from repositories.in_memory.url_repository import InMemoryRepository

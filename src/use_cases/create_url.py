@@ -2,8 +2,8 @@ import uuid
 
 from dataclasses import dataclass
 
-from src.entities.url import Url, DtoUrl
-from src.repositories import IUrlRepository
+from entities import Url, DtoUrl
+from repositories import IUrlRepository
 
 
 @dataclass

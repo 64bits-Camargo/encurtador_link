@@ -1,6 +1,6 @@
 
 # DTO
-from src.entities.url import DtoUrl
+from entities.url import DtoUrl
 
 # Entity
-from src.entities.url import Url
+from entities.url import Url

@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from src.entities.url import Url
+from entities import Url
 
 
 class IUrlRepository(ABC):
